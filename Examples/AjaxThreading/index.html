@@ -183,7 +183,9 @@
 					in_param: The response obtained on call success
 			*******************************************************************/
 			function SimpleCallback(in_param){
-				SetPhase4(in_param);
+                            console.log(in_param);
+                                var params = JSON.parse(in_param);
+				SetPhase4(params.id);
 			}
 	
 			/*****************************************************************
